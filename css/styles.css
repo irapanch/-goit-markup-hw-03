@@ -27,17 +27,13 @@ ul {
 }
 h1,
 h2,
-h3{
-	margin-top: 0;
-	margin-bottom: 0;
-}
+h3,
 p{
 	margin-top: 0;
 	margin-bottom: 0;
 }
-img{
-	display: block;
-}
+
+
 
 .list {
 	list-style: none;
@@ -46,11 +42,11 @@ img{
 	text-decoration: none;
 }
 .container {
-	outline: #31d0aa 2px solid;
-	margin: 0 auto;
-	width: 1158px;
+		width: 1158px;
 	padding-right: 15px;
 	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
 }
 .logo {
 	font-family: "Raleway", sans-serif;
@@ -67,6 +63,9 @@ img{
 /* =========== /COMPONENTS==== */
 
 /* ============HEADER== */
+.header{
+	border-bottom: 1px solid var(--accent-color);
+}
 .header>.container{
 	display: flex;
 	
@@ -136,9 +135,9 @@ img{
 
 .hero-body {
 
-	display: flex;
+	/* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
 
   background-color: var(--dark-color);
   text-align: center;
@@ -147,7 +146,7 @@ img{
 	
 }
  .hero-container{
-		
+	
 	margin-left: auto;
 	margin-right: auto;
 } 
@@ -159,8 +158,9 @@ img{
 	letter-spacing: 0.02em;
 	color: var(--white-background-color);
 	max-width: 496px;
-	
-	
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 188px;
 }
 .hero-button {
 	font-family: inherit;
@@ -183,9 +183,7 @@ img{
 .hero-button:focus {
 	background-color: var(--pressed-state-color);
 }
-.properties-body{
-	outline: 2px solid red;
-}
+
 .properties-list{
 	display: flex;
 	padding: 120px 0;
@@ -215,30 +213,90 @@ img{
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 }
-.activities-item{
-	outline: 2px solid red;
+.activities-title{
+	margin-bottom: 72px;
 }
+.activities-list{
+	display: flex;
+	padding-bottom: 120px;
+}
+.activities-list .activities-item+.activities-item{
+	margin-left: 24px;
+}
+
 .activities-image{
-	outline: 2px solid red;
+	display: block;
+	
 }
 .team-body {
 	background-color: var(--light-color);
+	
+}
+.team-title{
+	padding-top: 120px;
+	padding-bottom: 72px;
+}
+.team-list{
+	display: flex;
+	padding-bottom: 120px;
 }
 
+
+.team-list .team-item+.team-item{
+	margin-left: 24px;
+}
 .team-item {
 	background-color: var(--white-background-color);
+	text-align: center;
+}
+.team-image{
+	margin-bottom: 32px;
+}
+.team-name{
+	margin-bottom: 8px;
+	
+}
+.team-text{
+	padding-bottom: 32px;
 }
 /* ======FOOTER======== */
 .footer {
 	background-color: var(--dark-color);
+	display: flex;
+	
 }
+.footer>.container{
+	padding-top: 100px;
+	padding-bottom: 100px
+}
+
+
 .logo-light {
 	color: var(--light-color);
+}
+.footer-text{
+	width: 264px;
+	margin-top: 16px;
 }
 .text-light {
 	color: var(--light-color);
 }
+
+
+
+
+
 /* ===PORTFOLIO HTML===== */
+.filter-list{
+	display: flex;
+	justify-content: center;
+	padding-top: 96px;
+padding-bottom: 72px;
+
+}
+.filter-list .filter-item+.filter-item{
+	margin-left: 24px;
+}
 .filter-btn {
 	font-family: inherit;
 	font-weight: 500;
@@ -249,12 +307,47 @@ img{
 	color: var(--primary-brand-color);
 
 	background-color: var(--light-color);
+	
+	border: 1px solid var(--accent-color);
+border-radius: 4px;
+
+padding: 12px 24px;
+
 }
+
 .filter-btn:hover,
 .filter-btn:focus {
 	color: var(--white-background-color);
 	cursor: pointer;
 	background-color: var(--pressed-state-color);
+}
+
+.gallery-list{
+	
+	display: flex;
+	flex-wrap: wrap;
+	margin: -24px -12px;
+	margin-left: -12px;
+}
+.gallery-item{
+	
+margin: 24px 12px;
+
+}
+
+
+.gallery-image{
+	display: block;
+}
+
+.gallery-project-text{
+	margin-top: 8px;
+	text-align: center;
+}
+.gallery-card{
+	border: 1px solid var(--accent-color);
+	padding-bottom: 16px;
+	padding-top: 32px;
 }
 .gallery-item .title-second {
 	font-weight: 500;
