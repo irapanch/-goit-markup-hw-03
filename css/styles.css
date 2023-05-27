@@ -100,9 +100,9 @@ img{
 }
 .menu-list{
 	display: flex;
-	padding-top: 24px;
-	padding-bottom: 24px;
+	
 }
+
 .menu-list li{
 	margin-right: 40px;
 }
@@ -116,6 +116,8 @@ img{
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--dark-color);
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 
 .menu-link:hover,
